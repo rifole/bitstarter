@@ -6,7 +6,7 @@ var print = file.toString('utf8');
 
 app.use(express.logger());
 
-app.get('/', function(request, response); {
+app.get('/', function(request, response) {
   response.send('Hello World!');
 
 });
