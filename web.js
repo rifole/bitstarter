@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/about', function(req,res){
-    res.send(fs.readFileSync(about_html).toString
+    res.send(fs.readFileSync(about_html).toString());
 });
 
 var port = process.env.PORT || 8080
