@@ -1,7 +1,6 @@
-
-<html lang="en"><head>
+lang="en"><head>
     <meta charset="utf-8">
-    <title>Foley Estate Services</title>
+    <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -109,13 +108,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/">Foley Law Offices</a>
+          <a class="brand" href="#">Bitstarter</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-	      <li><a href="/services">Services</a?</li> 
-              <li><a href="/contact">Contact</a></li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -126,60 +124,77 @@
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Foley Estate Planning Services</h1>
+          <h1>Product: Development Version</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Solutions for Your Estate Planning Needs</p>
+          <p class="lead">One sentence description.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-          <div class="span10 offset1">
-	    <div class"span6 offset3 order">
-	      <form>
-	        <input type="text" name="e-mail" size="30" maxlength="40">
-		 <br><br>
-		<textarea class="form-search" rows="5" cols="50">Send us a question</textarea>
-	       <br><br>
-	        <input type="submit">
-		<input type="reset">
-	      </form>
-	    </div>
-	  </div>
-	  <div class="span10 offset1">
-            <!-- Standard Bootstrap button -->
-            <!--  -->
-            <button class="btn btn-primary">Start a Will</button>
-	    <button class="btn btn-primary">Start a Trust</button>
-	    <button class="btn btn-primary">Ask us a Question</button>
+          <div class="row-fluid">
+          <div class="span8 offset2">
+            <div class="row-fluid statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <h3>1000</h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>10</h3> <p>days left</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="row-fluid">
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
+            </div>
+          </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Get a Free Consultation</button>
+            <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -189,7 +204,7 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://unsplash.s3.amazonaws.com/IMG_5754.jpg">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
@@ -225,7 +240,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
 
@@ -239,42 +254,32 @@
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    Why do I need an Estate Plan?
+                    What does FAQ stand for?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A well designed estate plan can answer any questions your loved ones may have about how to settle your remaining affiars and provide for those loved ones after you are gone.
+                    Frequently Asked Question.
                   </div>
                 </div>
               </div>
-	      <div  class="accordion-group">
-		<div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    What is included in my estate plan?
-                  </a>
-		</div>
-		 <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-		    Answer
-		  </div>
-		</div>
-	       </div>
-             <div class="accordion-group">
+              <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
-                    What is included in my estate plan?
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    What's a Frequently Asked Question?
                   </a>
                 </div>
-                <div id="collapseThree" class="accordion-body collapse">
+                <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    All of your assets. This could include assets held in your name alone or jointly with others, assets such as bank accounts, real estate, stocks and bonds, and furniture, cars and jewelry. Your assets may also include life insurance proceeds, retirement accounts and payments that are due to you (such as a tax refund, outstanding loan or inheritance).
+                    A question which is commonly asked by users.
                   </div>
                 </div>
               </div>
             </div>
-         </div>
+          </div>
+
       </div>
+
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
@@ -285,7 +290,7 @@
             </a>, without all the cruft that would otherwise be
             put at the bottom of the page.</p>
         </div>
-OB      </div>
+      </div>
     </div>
   
 
