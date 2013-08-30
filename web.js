@@ -4,7 +4,7 @@ var index_html = "index.html";
 var about_html = 'about.html';
 var contact_html = 'contact.html';
 var services_html = 'services.html';
-
+var start_will_html = 'start_will.html';
 
 var app = express.createServer(express.logger());
 
@@ -25,6 +25,9 @@ app.get('/services', function(req,res){
     res.send(fs.readFileSync(services_html).toString());
 });
 
+app.get('/start_will', function(req,res){
+    res.send(fs.readFileSync(start_will_html).toString());
+});
 
 var port = process.env.PORT || 8080
 app.listen(port, function() {
