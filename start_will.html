@@ -2,23 +2,17 @@
     <meta charset="utf-8">
     <title>Foley Estate Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fco\
-de%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/\
-css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fco\
-de%2Fsocial-buttons.css">
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js">\
-</script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.j\
-s"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300it\
-alic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400itali\
-c,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
+
       /* Large desktop */
-      @media (min-width: 980px) {
+      @media (min-width: 980px) { 
         body {
          padding-top: 60px;
         }
@@ -31,7 +25,7 @@ c,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) {
+      @media (max-width: 480px) { 
        .copy {
          padding: 2.5% 10%;
        }
@@ -100,18 +94,117 @@ c,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
       .footer a {
         color: #ccccff;
       }
-      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons\
--in-center-position */
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
       div.addthis_toolbox {
       width:180px;
       margin: 0 auto;
       }
     </style>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43354620-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </head>
+  <body style="">
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Foley Law Offices</a>
+          <div class="nav-collapse collapse">
+	         <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/about">Blog</a></li>
+              <li><a href="/services">Services</a?</li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Foley Estate Services </h1>
+        </div>
+      </div> 
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">Comprehensive Individual Solutions to your Estate Plannning Needs</p>
+        </div>
+      </div>
+     </div>
 
 
-<form>
-  <h1>Basic Will Questionaire</h1>
-  <p>This confidential questionnaire will provide our attorneys with the information to begin drafting your personalized will</p><!--Intro-->
-  <input></input>
-  <button type+"submit" class="btn btn-default">Submit</button><!--Submit Button-->
-</form> <!--End of Form-->
+
+
+                   <!--StartForm -->
+  <div class="container">
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group"> <!--input name-->
+        <label for="inputName1" class="col-lg-2 control-label">Name</label> 
+        <div class="col-lg-10"> 
+	 <input type="text" class="form-control" id="inputName1" placeholder="First">
+	 <input type="text" class="form-control" id="inputName1" placeholder="Last">
+	</div>
+      </div> <!-- end input Phone-->
+
+     <div class="form-group"> <!--input name-->
+        <label for="inputName1" class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-10">
+         <input type="text" class="form-control" id="inputName1" placeholder="First">
+         <input type="text" class="form-control" id="inputName1" placeholder="Last">
+        </div>
+      </div> <!-- end input Phone-->
+
+
+
+      <div class="form-group"> <!--input Phone-->
+        <label for_"inputPhone1" class="col-lg-2 control-label">Phone</label>
+        <div class="col-lg-10">
+	 <input type="text" class="form-control" id="inputPhone1" placeholder="Home">
+         <input type="text" class="form-control" id="inputPhone1" placeholder="Mobile">
+	</div>
+      </div> <!-- end input Phone-->
+
+
+      <div class="form-group"> <!--input email-->
+	<label for_"inputEmail1" class="col-lg-2 control-label">Email</label>
+	<div class="col-lg-10">
+	  <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+	</div>  
+      </div> <!-- end input email-->
+
+      <button type+"submit" class="btn btn-default">Submit</button><!--Submit Button-->
+    </form> <!--End of Form-->
+   </div> <!--End Container-->
+ 
+</body></html>
