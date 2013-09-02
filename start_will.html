@@ -166,45 +166,34 @@
 
 
                    <!--StartForm -->
-  <div class="container">
-    <form class="form-horizontal" role="form">
-
-      <div class="form-group"> <!--input name-->
-        <label for="inputName1" class="col-lg-2 control-label">Name</label> 
-        <div class="col-lg-10"> 
-	 <input type="text" class="form-control" id="inputName1" placeholder="First">
-	 <input type="text" class="form-control" id="inputName1" placeholder="Last">
-	</div>
-      </div> <!-- end input Phone-->
-
-     <div class="form-group"> <!--input name-->
-        <label for="inputName1" class="col-lg-2 control-label">Name</label>
-        <div class="col-lg-10">
-         <input type="text" class="form-control" id="inputName1" placeholder="First">
-         <input type="text" class="form-control" id="inputName1" placeholder="Last">
-        </div>
-      </div> <!-- end input Phone-->
-
-
-
-      <div class="form-group"> <!--input Phone-->
-        <label for_"inputPhone1" class="col-lg-2 control-label">Phone</label>
-        <div class="col-lg-10">
-	 <input type="text" class="form-control" id="inputPhone1" placeholder="Home">
-         <input type="text" class="form-control" id="inputPhone1" placeholder="Mobile">
-	</div>
-      </div> <!-- end input Phone-->
-
-
-      <div class="form-group"> <!--input email-->
-	<label for_"inputEmail1" class="col-lg-2 control-label">Email</label>
-	<div class="col-lg-10">
-	  <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-	</div>  
-      </div> <!-- end input email-->
-
-      <button type+"submit" class="btn btn-default">Submit</button><!--Submit Button-->
-    </form> <!--End of Form-->
-   </div> <!--End Container-->
- 
+<div class="container">
+ <form class="well span10">
+  <div class="row">
+    <div class="span3">
+      <label>First Name</label>
+      <input type="text" class="span3" placeholder="Your First Name">
+      <label>Last Name</label>
+      <input type="text" class="span3" placeholder="Your Last Name">
+      <label>Email Address</label>
+      <input type="text" class="span3" placeholder="Your email address">
+      <label>Do you currently have a will?<label>
+      <input type="checkbox" id="inlineCheckbox1" value="option1"> yes
+      <input type="checkbox" id="inlineCheckbox2" value="option2"> no
+      <label>Subject</label>      
+      <select id="subject" name="subject" class="span3">
+	<option value="na" selected="">Choose One:</option>
+	<option value="service">General Customer Service</option>
+	<option value="suggestions">Suggestions</option>
+	<option value="product">Product Support</option>
+	</select>
+      </div>
+    <div class="span5">
+      <label>Message</label>
+      <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+      </div>
+    
+    <button type="submit" class="btn btn-primary pull-right">Send</button>
+    </div>
+ </form>
+</div> <!--End Container-->
 </body></html>
