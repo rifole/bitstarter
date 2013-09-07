@@ -165,44 +165,58 @@
 
 
 
-                   <!--StartForm -->
-<div class="container">
- <form class="well span10">
-  <div class="row">
-    <div class="span3">
-      <label>First Name</label>
-      <input type="text" class="span3" placeholder="Your First Name">
-      <label>Last Name</label>
-      <input type="text" class="span3" placeholder="Your Last Name">
-      <label>Email Address</label>
-      <input type="text" class="span3" placeholder="Your email address">
-      <label>Do you currently have a will?<label>
-      <input type="checkbox" id="inlineCheckbox1" value="option1"> yes
-      <input type="checkbox" id="inlineCheckbox2" value="option2"> no
-      <label>Subject</label>      
-      <select id="subject" name="subject" class="span3">
-	<option value="na" selected="">Choose One:</option>
-	<option value="service">General Customer Service</option>
-	<option value="suggestions">Suggestions</option>
-	<option value="product">Product Support</option>
-	</select>
-      </div>
-    <div class="span5">
-      <label>Message</label>
-      <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
-      </div>
-    
-    <button type="submit" class="btn btn-primary pull-right">Send</button>
-    </div>
- </form> <--!End Form-->
- 
+ <form name="contactform" method="post" action="mail.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>
+ <!--End Form-->
 
 
- <form action ="mail.php" method="POST">
-   <p>Name</p> <input type="text" name="name">
-   <p>Email</p> <input type="text" name="email">
-   <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-   <input type="submit" value="Send"><input type="reset" value="Clear">
- </form>
+
 </div> <!--End Container-->
 </body></html>
